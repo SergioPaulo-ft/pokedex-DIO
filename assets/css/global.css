@@ -1,24 +1,54 @@
-* {
+*{
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 
-body {
+body{
     background-color: #f6f8fc;
 }
 
-.content {
-    width: 100vw;
-    height: 100vh;
+#description{
+    background-color: white;
+    max-width: 992px;
+    padding: 1rem;
+    margin: auto;
+}
+.pokemon-description{
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.detail-description{
+    display: flex;
+    flex-direction: column;
+    color: white;  
+    padding: 15px;
+    border-radius: 15px;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.37);
+}
+
+.content{
     padding: 1rem;
     background-color: #fff;
+    width: 100vw;
 }
 
 @media screen and (min-width: 992px) {
-    .content {
+    .content{
         max-width: 992px;
         height: auto;
         margin: 1rem auto;
         border-radius: 1rem;
     }
 }
+@media screen and (min-width: 992px) {
+    .detail-description{
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+        padding: 30px;
+    }
+}
+
